@@ -1,0 +1,65 @@
+
+~/qwen3-vl/demo_Linux_aarch64
+
+export LD_LIBRARY_PATH=./lib
+chmod +x ./demo
+
+2B
+./demo demo.jpg ./qwen3-vl-2b_vision_rk3576.rknn ./qwen3-vl-2b-instruct_w4a16_g128_rk3576.rkllm 2048 4096 2 "<|vision_start|>" "<|vision_end|>" "<|image_pad|>"
+4B
+./demo demo3.jpg ./qwen3-vl-4b_vision_rk3576.rknn ./qwen3-vl-4b-instruct_w4a16_g128_rk3576.rkllm 2048 4096 2 "<|vision_start|>" "<|vision_end|>" "<|image_pad|>"
+
+2B
+./demo_with_image_replace ./demo3.jpg ./qwen3-vl-2b_vision_rk3576.rknn ./qwen3-vl-2b-instruct_w4a16_g128_rk3576.rkllm 512 2048 2 "<|vision_start|>" "<|vision_end|>" "<|image_pad|>"
+4B
+./demo_with_image_replace ./demo3.jpg ./qwen3-vl-4b_vision_rk3576.rknn ./qwen3-vl-4b-instruct_w4a16_g128_rk3576.rkllm 512 2048 2 "<|vision_start|>" "<|vision_end|>" "<|image_pad|>"
+
+
+
+
+<image>告诉我这张图片中绿植，楼梯相对于电视机在图像中的那一侧？
+<image>帮我规划一个路径从当视角走到窗户。
+
+
+鲁班猫文档：
+	https://doc.embedfire.com/linux/rk356x/Ai/zh/latest/lubancat_ai/base/vit.html
+
+环境：
+
+	（pc端，Ubuntu 22.04）模型转换：
+
+		创建环境
+		conda create -n qwen3-vl-py39 python=3.9
+		conda activate qwen3-vl-py39
+
+	下载工具链：
+		rknn-toolkit2 ：2.3.2
+		rknn_llm ：1.2.3
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
